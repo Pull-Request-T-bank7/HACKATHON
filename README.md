@@ -1,5 +1,5 @@
 ## Описание
-**StudEvents - единая платформа для всех студенческих мероприятий в
+StudEvents - единая платформа для всех студенческих мероприятий в
 России, где студенты смогут найти информацию о событиях всех вузов и
 городов.
 
@@ -8,18 +8,18 @@
 - Организаторы могут анонсировать события, привлекать участников.
 
 ## Скриншоты проекта
-**![image](https://github.com/user-attachments/assets/af9b1ac2-28fa-4f29-ac13-f54a911c9a1d)
-**![image](https://github.com/user-attachments/assets/abb40b79-af86-4bfb-aba9-4af88fef1afc)
-**![image](https://github.com/user-attachments/assets/a441db0f-73ba-4ee7-a612-4a2d4b50c062)
+![image](https://github.com/user-attachments/assets/af9b1ac2-28fa-4f29-ac13-f54a911c9a1d)
+![image](https://github.com/user-attachments/assets/abb40b79-af86-4bfb-aba9-4af88fef1afc)
+![image](https://github.com/user-attachments/assets/a441db0f-73ba-4ee7-a612-4a2d4b50c062)
 
 ## Список участников
-**Андреев Анатолий**
-**Алиханов Богдан**
-**Гамзатов Ислам**
-**Горбунов Иван**
-**Кондрашов Михаил**
-**Линников Егор**
-**Сироткин Артём**
+- Андреев Анатолий
+- Алиханов Богдан
+- Гамзатов Ислам
+- Горбунов Иван
+- Кондрашов Михаил
+- Линников Егор
+- Сироткин Артём
 
 ## Функционал
 - Разный уровень доступа
