@@ -6,7 +6,6 @@ function Information(){
                 <a className="info_links" href="">Каталог</a>
                 <a className="info_links" href="">Главная</a>
                 <a className="info_links" href="">Профиль</a>
-                <a className="info_links" href="">Опросник</a>
             </div>
             <div className="contacts_container">
                 <p className="infoH">Наши контакты</p>
