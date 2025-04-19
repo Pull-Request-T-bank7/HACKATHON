@@ -8,8 +8,8 @@ StudEvents - единая платформа для всех студенчес�
 - Организаторы могут анонсировать события, привлекать участников.
 
 ## Скриншоты проекта
+![image](https://github.com/user-attachments/assets/7b14e073-ecbd-49ca-a7f6-0499d74cbb94)
 ![image](https://github.com/user-attachments/assets/af9b1ac2-28fa-4f29-ac13-f54a911c9a1d)
-![image](https://github.com/user-attachments/assets/abb40b79-af86-4bfb-aba9-4af88fef1afc)
 ![image](https://github.com/user-attachments/assets/a441db0f-73ba-4ee7-a612-4a2d4b50c062)
 
 ## Список участников
