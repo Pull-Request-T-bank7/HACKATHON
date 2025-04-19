@@ -1,4 +1,4 @@
-import Found from "./Layout/assets/search.svg"
+import Found from "../Layout/assets/search.svg"
 
 function Search(){
     return(
