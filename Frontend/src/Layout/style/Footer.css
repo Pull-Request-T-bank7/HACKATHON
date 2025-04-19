@@ -1,227 +1,175 @@
-/* Footer.css */
+
 footer {
-    width: 100%;
-    background-color: #3833C3;
-  }
-  
-  /* Десктопная версия (row) */
+  width: 100%;
+  background-color: #3833C3;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.footer_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.information_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation_container,
+.contacts_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info_links {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.infoH {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mailing_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subs_text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subscribe_text {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.subs_p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 553px;
+}
+
+.mail-form {
+  width: 100%;
+  height: 60px;
+  padding: 0 80px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 70px;
+  background: #3833C3;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.createdBy {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 1200px)and (max-width: 1489){
+
+}
+@media (min-width: 1200px) {
   .footer_container {
-    background-color: #3833C3;
-    display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 40px;
-    max-width: 1440px;
-    margin: 7% ;
-    position: relative;
-  }
-  
-  .information_container {
-    display: flex;
-  }
-  
-  .navigation_container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-  }
-  
-  .contacts_container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    text-align: center;
-  }
-  
-  .info_links {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    font-size: 17px;
-    margin-top: 8px;
-  }
-  
-  .infoH {
-    white-space: nowrap;
-    width: 154.13px;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-  }
-  
-  /* Стили для блока подписки */
-  .mailing_container {
-    display: flex;
     align-items: flex-start;
-  }
-  
-  .subs_text {
-    margin-top: 32px;
-    margin-left: 55px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  .subscribe_text {
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 27.69px;
-    width: 470px;
-    margin-bottom: 7px;
-  }
-  
-  .subs_p {
-    color: white;
-    font-size: 17.72px;
-    font-weight: 400;
-    width: 399.13px;
-  }
-  
-  /* Стили для формы */
-  .input-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 553.5px;
-    margin-left: 64px;
-    margin-top: 32px;
-  }
-  
-  .mail-form {
-    width: 100%;
-    height: 75px;
-    padding-left: 27px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    position: absolute;
-    right: 5px;
-    height: 69px;
-    width: 78px;
-    background: #3833C3;
-    border: none;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .submit-button:hover {
-    background: #2a26a1;
-  }
-  
-  .createdBy {
-    color: white;
-    padding-left: 34px;
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  /* Мобильная версия (column) */
-  @media (max-width: 1024px) {
-    .footer_container {
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
-    }
-  
-    .information_container {
-      margin-left: 0;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .contacts_container {
-      margin-left: 0;
-      margin-top: 30px;
-    }
-  
-    .mailing_container {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      margin-top: 30px;
-    }
-  
-    .subs_text {
-      margin-left: 0;
-      align-items: center;
-      text-align: center;
-      margin-top: 0;
-    }
-  
-    .subscribe_text,
-    .subs_p {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .subscribe_text {
-      font-size: 24px;
-    }
-  
-    .subs_p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-  
-    .input-group {
-      width: 100%;
-      max-width: 553px;
-      margin-left: 0;
-    }
-  
-    .mail-form {
-      height: 60px;
-    }
-  
-    .submit-button {
-      height: 54px;
-      width: 70px;
-    }
-  
-    .createdBy {
-      padding-left: 0;
-      margin-top: 30px;
-    }
+    padding: 60px 5%;
   }
 
-  @media (max-width: 480px) {
-    .subscribe_text {
-      font-size: 20px;
-    }
-  
-    .subs_p {
-      font-size: 14px;
-    }
-  
-    .info_links {
-      font-size: 15px;
-    }
-  
-    .infoH {
-      font-size: 18px;
-    }
-  
-    .mail-form {
-      height: 50px;
-      padding-left: 15px;
-      font-size: 14px;
-    }
-  
-    .submit-button {
-      height: 44px;
-      width: 60px;
-    }
+  .information_container {
+    flex-direction: row;
+    gap: 80px;
   }
+
+  .contacts_container {
+    margin-left: 50px;
+  }
+
+  .mailing_container {
+    align-items: flex-start;
+  }
+
+  .subs_text {
+    text-align: left;
+    margin-left: 55px;
+  }
+
+  .subscribe_text {
+    font-size: 27.69px;
+    width: 470px;
+  }
+
+  .subs_p {
+    font-size: 17.72px;
+    width: 399px;
+  }
+
+  .input-group {
+    margin-left: 64px;
+  }
+
+  .mail-form {
+    height: 75px;
+  }
+
+  .submit-button {
+    height: 65px;
+    width: 78px;
+  }
+}
+
+/* Планшет (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer_container {
+    padding: 40px;
+  }
+
+  .information_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}

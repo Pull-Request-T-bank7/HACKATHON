@@ -1,58 +1,147 @@
-.header_container{
-    background-color: #E9E9E9;
-    display: flex;
-    width: 100%;
+/* Базовые стили для всех устройств */
+.header_container {
+  background-color: #E9E9E9;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.link_container{
-    margin-top: 40px;
-    margin-left: 231px;
-    margin-right: 263px;
-    margin-bottom: 45.4px;
+.link_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.link_header{
+.link_header {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.search_container {
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+}
+
+.search_form {
+  width: 100%;
+  height: 60px;
+  border-radius: 21.51px;
+  background-color: #3833C3;
+  border: 0;
+  padding: 0 60px 0 23px;
+  color: white;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.search_form::placeholder {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.search_icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.like_img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Десктоп (1200px и выше) */
+@media (min-width: 1200px) {
+  .header_container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  .link_container {
+    margin: 40px 0;
+    gap: 30px;
+  }
+
+  .link_header {
     padding: 35px;
     font-size: 25px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-}
+  }
 
-.search_container{
-    position: relative;
-    margin-top: 25px;
-    margin-bottom: 29.98px;
+  .search_container {
+    margin: 25px 0;
+  }
 
-}
-
-.search_form{
-    width: 384px;
+  .search_form {
     height: 68.03px;
-    border-radius: 21.51px;
-    background-color: #3833C3;
-    border: 0px
-}
-
-.search_form::placeholder{
-    color: #FFFFFF;
     font-size: 23.9px;
-    padding-block: 19px;
-    padding-left: 23px;
-    font-weight: 400;
-}
+  }
 
-.search_icon{
-    position: absolute;
-    pointer-events: none;
-    right: 10px;
-    top: 15%;
+  .search_icon {
     width: 43.44px;
     height: 43.44px;
-}
-.like_img{
+  }
+
+  .like_img {
     width: 47px;
     height: 47px;
-    margin-top: 39px;
-    margin-left: 119px;
+    margin-left: 30px;
+  }
+}
+
+/* Планшет (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header_container {
+    justify-content: space-around;
+    padding: 20px 40px;
+  }
+
+  .link_header {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .search_form {
+    height: 55px;
+    font-size: 20px;
+  }
+}
+
+/* Телефон (до 767px) */
+@media (max-width: 767px) {
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .link_header {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .search_form {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .like_img {
+    order: 3;
+    margin-top: 15px;
+  }
 }
