@@ -12,6 +12,13 @@ StudEvents - единая платформа для всех студенчес�
 ![image](https://github.com/user-attachments/assets/af9b1ac2-28fa-4f29-ac13-f54a911c9a1d)
 ![image](https://github.com/user-attachments/assets/a441db0f-73ba-4ee7-a612-4a2d4b50c062)
 
+- Адаптивность
+![image_2025-04-19_19-32-25](https://github.com/user-attachments/assets/d2734daf-94d1-465f-b5b3-3027e2119044)
+
+- UI KIT
+![image](https://github.com/user-attachments/assets/ef5c6a15-c012-4b40-9484-2b5e879be409)
+
+
 ## Список участников
 - Андреев Анатолий
 - Алиханов Богдан
