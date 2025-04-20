@@ -1,47 +1,66 @@
-/* Базовые стили для всех устройств */
 .header_container {
   background-color: #E9E9E9;
   display: flex;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  position: relative;
 }
 
-.link_container {
+.burger_menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  z-index: 100;
+}
+
+.burger_line {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.burger_line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger_line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger_line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.search_like_container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.link_header {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 15px;
-  font-size: 18px;
-  white-space: nowrap;
+  align-items: center;
+  gap: 20px;
+  order: 3;
 }
 
 .search_container {
   position: relative;
-  width: 100%;
-  max-width: 384px;
 }
 
 .search_form {
-  width: 100%;
-  height: 60px;
+  width: 384px;
+  height: 68.03px;
   border-radius: 21.51px;
   background-color: #3833C3;
   border: 0;
   padding: 0 60px 0 23px;
   color: white;
-  font-size: 18px;
+  font-size: 23.9px;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 .search_form::placeholder {
@@ -51,7 +70,7 @@
 
 .search_icon {
   position: absolute;
-  right: 20px;
+  right: 23px;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
@@ -59,31 +78,48 @@
   pointer-events: none;
 }
 
+/* Стили для лайка */
 .like_img {
-  width: 40px;
-  height: 40px;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Десктоп (1200px и выше) */
+.like_img:hover {
+  transform: scale(1.1);
+}
+
+.link_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.link_header {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.link_header:hover {
+  color: #3833C3;
+}
+
 @media (min-width: 1200px) {
   .header_container {
-    justify-content: space-between;
-    align-items: center;
     padding: 0 5%;
-  }
-
-  .link_container {
-    margin: 40px 0;
-    gap: 30px;
   }
 
   .link_header {
     padding: 35px;
     font-size: 25px;
-  }
-
-  .search_container {
-    margin: 25px 0;
   }
 
   .search_form {
@@ -99,15 +135,16 @@
   .like_img {
     width: 47px;
     height: 47px;
-    margin-left: 30px;
   }
 }
 
-/* Планшет (768px - 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .header_container {
-    justify-content: space-around;
-    padding: 20px 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
   }
 
   .link_header {
@@ -121,27 +158,55 @@
   }
 }
 
-/* Телефон (до 767px) */
+
 @media (max-width: 767px) {
-  .header_container {
+  .burger_menu {
+    display: flex;
+    order: 1;
+  }
+
+  .link_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #E9E9E9;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding: 15px;
+    transform: translateX(-100%);
+    z-index: 99;
+    gap: 30px;
+  }
+
+  .link_container.active {
+    transform: translateX(0);
+  }
+
+  .search_like_container {
+    order: 2;
+    
+    justify-content: end;
+  }
+
+  .search_container {
+    max-width: calc(100% - 70px);
   }
 
   .link_header {
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 24px;
   }
 
   .search_form {
     height: 50px;
     font-size: 16px;
+    width: 100%;
   }
 
   .like_img {
-    order: 3;
-    margin-top: 15px;
+    width: 40px;
+    height: 40px;
   }
 }

@@ -1,3 +1,4 @@
+import Submit_img from "../Layout/assets/send-plane-2-fill.svg"
 function Mailing(){
     return(
     <div className="mailing_container">
@@ -12,8 +13,7 @@ function Mailing(){
             placeholder="Введите ваш email"
             />
             <button className="submit-button">
-                vegrve
-                <img src="" alt="" />
+                <img src={Submit_img} alt="" />
             </button>
         </div>
     </div>
