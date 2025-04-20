@@ -1,0 +1,85 @@
+.wrapperCard{
+    width: 320px;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    padding-top : 24.5px;
+    border-radius: 16.957px;
+    background: #E7E7E7;
+    box-shadow: 0px 4.042px 4.042px 1.01px rgba(0, 0, 0, 0.09) inset;
+}
+
+.containerCard {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+}
+
+#headerOpenText{
+    display: flex;
+    width: 139px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imageCard {
+    margin-bottom: 27px;
+}
+
+
+.regOpenText {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+
+.titleCard{
+    font-weight: 500;
+
+}
+
+.hashtagText {
+    max-width: 200px;
+    font-size: 15px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    width: 100%;
+}
+
+.buttonsCard {
+    width: 175px;
+    height: 50px;
+    background-color: #3833C3;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    
+}
+.buttonLike{
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-top: 15px;
+    right: 0;
+    position: absolute;
+    right: 0;
+    padding-left: 30px ;
+    background: none;
+
+}
+.likeImage{
+    width: 30px;
+    height: 30px; 
+}
