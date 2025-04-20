@@ -4,11 +4,12 @@ import './index.css'
 import Header from './Layout/Header.jsx'
 import Footer from './Layout/Footer.jsx'
 import  Catalog  from './Catalog/Catalog.jsx'
+import Registration from './registration/Registration.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <Header/>
-      <Catalog/>
+      <Registration/>
       <Footer/>
   </StrictMode>,
 )
